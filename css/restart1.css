@@ -295,8 +295,8 @@ footer {
  
 }
 
- /* From 320px and up */
-@media (min-width: 320px) and (max-width: 767px) {
+/* From 320px and up */
+@media (min-width: 320px) and (max-width: 1024px) { /* max-width was 767px */
 a,
 p,	
 .intro-text,
@@ -308,9 +308,13 @@ p,
  /* font-size: calc(17px + 0.390625vw); */
 }
 .container-fonts {
-		height: auto,
+  height: auto,
 }
-
+	
+.header-text {
+ font-size: 34px;
+  }
+}
 
 /* Begin Nav Section in Header (if used) 
 nav {
