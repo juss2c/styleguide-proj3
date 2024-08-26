@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+* {  
+  box-sizing: border-box;    
+}
+ 
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* new header layout */
+
+.header {
+  background-color: #ff8000;	
+/*  background-image: url("https://screamer2.com/codecademy/cheatsheet-proj2/images/black_bg_trans_lic.png"); */
+  background-size: cover;
+  background-position: center;	
+  box-shadow: 0 0 25px 0 #881ee4;       /* was #3587a4; */
+  border-bottom: 1px solid rgb(136, 21, 238); /* (53, 136, 164) */
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  position: fixed; 
+  top: 0px;
+  z-index: 10;
+}
+
+.header-text {
+  text-align: center;
+  color: #000;
+  padding-top: 1rem;
+  padding-bottom: 1.25rem;
+  font-family: "Creepster", cursive;
+  font-size: 5rem;	
+}
+
+img ,#spacer{
+  width: 90px;
+}
+
+.imglogo {
+  padding: 0;
+  margin: 0;
+  display: flex;	
+}
+/* End new header layout */
+
+/* Begin Nav Section in Header (if used) */
+nav {
+ 
+}
+
+.nav-items {
+  margin: 0 auto;
+}
+
+li {
+  color: #FFF;
+  display: block;
+  font-family: "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;	
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+  /* vertical-align: middle; */
+  /* top padding was 20 */	
+  padding: 20px 18px 14px 18px;
+  text-transform: uppercase;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(220, 220, 220);
+}
+
+nav a:hover {
+  color: #a0ebfd;
+}
+
+/* Test code */
+nav a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: -10;
+  background-color: #a0ebfd;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+nav a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+/* End test */
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.active {
+  color: #88CCF1;
+}
+
+h2 {
+  font-family: "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;	
+  color: #c4dae4;
+  /* margin-top: 60px; */
+  text-align: center;
+}
+.intro-text {
+  font-family: "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;	
+  color:  #1c1b20;  /* red #9e0612; orange #E66C2C */
+  font-size: 17px;	
+  margin-top: 120px;
+  text-align: center;
+}
+
+.imglogo {
+  padding: 0;
+  margin: 0;
+  display: flex;	
+}
+
+
+ /* From 320px and up */
+@media (min-width: 320px) and (max-width: 767px) {
+a,
+p,	
+.intro-text,
+.nav-items {
+  font-size: 110% !important;
+  text-align: left!important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+ /* font-size: calc(17px + 0.390625vw); */
+
+  }
+}
+	  
