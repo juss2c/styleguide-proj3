@@ -236,7 +236,7 @@ div.font-block1,
 .style-block1,
 .style-block2,
 .style-block3 {
-  height: 160px;
+  height: auto; /* was 160px */
   width: 33% !important;
 }
 
@@ -313,7 +313,10 @@ p,
 	
 .header-text {
  font-size: 34px;
-  }
+}
+.style-block1 {
+font-size: 16px;		
+	}	
 }
 
 /* Begin Nav Section in Header (if used) 
